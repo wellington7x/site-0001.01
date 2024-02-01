@@ -1,0 +1,389 @@
+/*------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ESTILOS ALTERADOS-----------------------------------------------------------------------------------------------------*/
+
+#mainNav {
+  background-color: #5e0c0f;
+}
+
+/* Altera a cor da fonte e dos links */
+.navbar-brand,
+.navbar-nav .nav-link {
+  color: #c2b76c !important;
+}
+
+/* Altera a cor do ícone no botão do menu */
+.navbar-toggler i {
+  color: #c2b76c !important;
+}
+
+/* Altera a cor do botão */
+.btn-success {
+  background-color: #5e0c0f !important;
+  border-color: #c2b76c !important;
+}
+
+/* Altera a cor do texto do botão */
+.btn-success span {
+  color: #c2b76c !important;
+}
+
+/* Altera a cor do texto "Menu" no botão do menu */
+.navbar-toggler {
+  color: #c2b76c !important;
+}
+
+/* Altera a cor da borda do botão do menu */
+.navbar-toggler {
+  border-color: #c2b76c !important;
+}
+
+/* Altera a cor do ícone no botão do menu */
+.navbar-toggler i {
+  color: #c2b76c !important;
+}
+
+#nutri {
+  color: dimgrey;
+  font-size: 0.7em;
+  text-align: left;
+  padding: 5px;
+}
+
+#button-nutri {
+  border-radius: 40px;
+  padding: 12px 20px; /* Ajustei o padding para proporcionar um espaçamento mais agradável */
+  border: 1px groove #c2b76c; /* Melhorei a definição da borda */
+  background-color: #5e0c0f;
+  color: #c2b76c;
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji" !important;
+  cursor: pointer; /* Adicionei um estilo de cursor ao passar o mouse sobre o botão */
+  font-weight: bolder;
+}
+
+#button-nutri:hover {
+  background-color: #6f1014; /* Mudança de cor ao passar o mouse sobre o botão */
+}
+
+.section-title {
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji" !important;
+  color: #5e0c0f;
+}
+
+#service {
+  font-family: "Newsreader", "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
+  color: #212529;
+}
+
+.bar-color {
+  background-color: #5e0c0f;
+  height: 5px;
+  width: 300px;
+  margin: 30px auto;
+  margin-bottom: 50px;
+}
+
+/* Estilos para telas menores */
+@media (max-width: 340px) {
+  .bar-color {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/*--------------------------------------------------------------
+# Contact FORM
+--------------------------------------------------------------*/
+#contact {
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji" !important;
+  background: #f8f9fa; /* Cor fundo*/
+  color: #1a1814;
+}
+
+.contact .info {
+  width: 100%;
+}
+
+.contact .info i {
+  font-size: 20px;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #5e0c0f; /* Cor icone */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #5e0c0f; /* Cor texto menor*/
+}
+
+.contact .info .open-hours,
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .php-email-form {
+  width: 100%;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #cda45e;
+  border-top-color: #1a1814;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 0;
+  box-shadow: none;
+  font-size: 14px;
+  background: #f8f9fa; /* Cor fundo inputs */
+  border-color: #5e0c0f; /* Cor borda inputs */
+  color: #5e0c0f;
+}
+
+.contact .php-email-form input::-webkit-input-placeholder,
+.contact .php-email-form textarea::-webkit-input-placeholder {
+  color: #a49b89;
+}
+
+.contact .php-email-form input::-moz-placeholder,
+.contact .php-email-form textarea::-moz-placeholder {
+  color: #a49b89;
+}
+
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
+  color: #a49b89;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #cda45e;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #5e0c0f;
+  border: 0;
+  padding: 10px 35px;
+  color: #c2b76c;
+  font-weight: bold;
+  transition: 0.4s;
+  border-radius: 50px;
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #7b1317;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#form-icon {
+  color: #c2b76c;
+}
+/*--------------------------------------------------------------
+# Contact FORM end
+--------------------------------------------------------------*/
+
+/*Cor Bloco de texto*/
+#text-blok {
+  color: #c2b76c;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1); /* Sombra pequena */
+  border-radius: 10px;
+}
+
+/*Estilos FAQ*/
+
+.accordion-button:not(.collapsed) {
+  color: #5e0c0f; /* Altera a cor do texto */
+  background-color: rgba(194, 183, 108, 0.3); /* Altera a cor de fundo */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra */
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%235e0c0f'%3e%3cpath fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3e %3cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3e%3c/svg%3e");
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%235e0c0f'%3e%3cpath fill-rule='evenodd' d='M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z'/%3e %3cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3e%3c/svg%3e");
+}
+
+/* Aplica a fonte Kanit */
+.accordion-button,
+.accordion-button::after {
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+/*Footer Styles*/
+ul.social-icons li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35px;
+  width: 35px;
+  background: #aca37c;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #fff;
+}
+
+ul.social-icons li a svg {
+  width: 70%;
+  height: auto;
+}
+
+.footer-main {
+  padding: 2em;
+  background: #5e0c0f;
+  text-align: center;
+}
+
+.footer-main .footer-logo {
+  margin-bottom: 15px;
+}
+
+.footer-main .copyright p,
+.footer-main .copyright a {
+  color: #fff;
+  font-weight: 100;
+  transition: all 0.2s ease;
+}
+
+.footer-main .copyright a:hover {
+  color: #c3b76c;
+}
+
+.footer-main ul.footer-links {
+  margin-top: 2px;
+}
+
+.footer-main ul.footer-links li a {
+  color: #aca37c;
+  padding: 5px;
+  font-size: 16px;
+}
+
+/* Estilização dos textos */
+.footer-main h5,
+.footer-main ul.footer-links li a {
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.footer-main p {
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji" !important;
+  font-size: 14px;
+  color: #aca37c;
+}
+
+.footer-1 {
+  font-family: "Kanit", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji" !important;
+  color: #c2b76c;
+  font-size: 18px;
+}
+
+.social-icon {
+  padding: 5px;
+}
